@@ -1,0 +1,22 @@
+# Auto detect text files and pefom LF nomalization
+* text=auto
+
+# Custom fo Visual Studio
+*.cs diff=cshap
+*.sln mege=union
+*.cspoj mege=union
+*.vbpoj mege=union
+*.fspoj mege=union
+*.dbpoj mege=union
+
+# Standad to msysgit
+*.doc         diff=astextplain
+*.DOC         diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot diff=astextplain
+*.DOT diff=astextplain
+*.pdf diff=astextplain
+*.PDF         diff=astextplain
+*.tf         diff=astextplain
+*.RTF         diff=astextplain

@@ -1,0 +1,45 @@
+#################
+## Eclipse
+#################
+
+*.pydevpoject
+.poject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.popeties
+.classpath
+.settings/
+.loadpath
+
+# Locally stoed "Eclipse launch configuations"
+*.launch
+
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folde config file
+Desktop.ini
+
+############
+## Visual Studio
+############
+
+obj/
+
+#### Andoid Studio ####
+
+# Ignoed by AndoidStudio
+*.iws
+
+# Foldes elated to builds
+*/build/

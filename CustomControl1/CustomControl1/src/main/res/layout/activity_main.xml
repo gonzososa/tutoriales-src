@@ -4,9 +4,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-            <com.gmail.gonzaloantonio.examples.customcontrol1.ExtendedEditText
-                android:id="@+id/TxtPrueba"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+    <com.gmail.gonzaloantonio.examples.customcontrol1.ExtendedEditText
+        android:id="@+id/CustomControl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     </LinearLayout>

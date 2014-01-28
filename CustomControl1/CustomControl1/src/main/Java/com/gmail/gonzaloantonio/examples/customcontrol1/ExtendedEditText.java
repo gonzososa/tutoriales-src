@@ -10,9 +10,8 @@ import android.widget.EditText;
 
 public class ExtendedEditText extends EditText
 {
-    private Paint p1;
-    private Paint p2;
-    private float escala;
+    Paint p1, p2;
+    float escala;
 
     public ExtendedEditText (Context context)
     {
@@ -32,17 +31,23 @@ public class ExtendedEditText extends EditText
         inicializacion ();
     }
 
-    private void inicializacion ()
+    public void inicializacion ()
     {
-        Paint p1 = new Paint (Paint.ANTI_ALIAS_FLAG);
+        try {
+            escala = getResources().getDisplayMetrics().density;
+        }
+        catch (NullPointerException nex) {
+            Log.e ("FALLA", nex.getMessage().toString());
+            return;
+        }
+
+        p1 = new Paint (Paint.ANTI_ALIAS_FLAG);
         p1.setColor (Color.BLACK);
         p1.setStyle (Paint.Style.FILL);
 
-        Paint p2 = new Paint (Paint.ANTI_ALIAS_FLAG);
+        p2 = new Paint (Paint.ANTI_ALIAS_FLAG);
         p2.setColor (Color.WHITE);
-        p2.setTextSize (20);
-
-        escala = getResources().getDisplayMetrics().density;
+        p2.setTextSize(20);
     }
 
     @Override
@@ -50,12 +55,14 @@ public class ExtendedEditText extends EditText
     {
         super.onDraw (canvas);
 
+        if (p1 == null || p2 == null ) return;
+
         canvas.drawRect (this.getWidth () - 30 * escala,
                         5 * escala,
                         this.getWidth () - 5 * escala,
                         20 * escala, p1);
 
-        canvas.drawText ("" + this.getText().toString().length (),
+        canvas.drawText ("" + this.getText().toString().length(),
                         this.getWidth () - 28 * escala,
                         17 * escala, p2);
     }

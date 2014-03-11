@@ -7,15 +7,17 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
+import android.util.Log;
 
 public class FragmentListado extends Fragment
 {
-    private Correo[] datos = new Correo [] {
+    private CorreosListener listener;
+
+    private Correo [] datos = new Correo [] {
             new Correo ("Persona 1", "Asunto de Correo 1", "Texto de Correo 1"),
             new Correo ("Persona 2", "Asunto de Correo 2", "Texto de Correo 2"),
             new Correo ("Persona 3", "Asunto de Correo 3", "Texto de Correo 3"),
@@ -40,6 +42,18 @@ public class FragmentListado extends Fragment
         super.onActivityCreated (state);
         listado = (ListView) getView().findViewById (R.id.LstListado);
         listado.setAdapter (new AdaptadorCorreos (this));
+        listado.setOnItemClickListener (new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if (listener != null) {
+                    listener.onCorreoSeleccionado ((Correo) listado.getAdapter().getItem (i));
+                }
+            }
+        });
+    }
+
+    public void setCorreosListener (CorreosListener listener) {
+        this.listener = listener;
     }
 
     class AdaptadorCorreos extends ArrayAdapter<Correo> {

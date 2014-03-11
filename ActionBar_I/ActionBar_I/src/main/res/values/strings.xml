@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ActionBar_I</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_nuevo">Nuevo</string>
+    <string name="texto">Hola</string>
+</resources>

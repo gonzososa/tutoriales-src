@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActionBar_II</string>
+    <string name="menu_settings">Ajustes</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_nuevo">Nuevo</string>
+    <string name="texto">Hola</string>
+    <string name="tab_1">TAB 1</string>
+    <string name="tab_2">TAB 2</string>
+</resources>

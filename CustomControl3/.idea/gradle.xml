@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/CustomControl3" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\CustomControl3" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\CustomControl3\CustomControl3" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="fragment1">Fragmento 1</string>
+    <string name="fragment2">Fragmento 2</string>
+    <string name="fragment3">Fragmento 3</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_search">Búsqueda</string>
+</resources>

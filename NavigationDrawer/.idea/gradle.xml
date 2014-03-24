@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\ActionBarCompat" />
-            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\ActionBarCompat\ActionBarCompat" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\NavigationDrawer" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\NavigationDrawer\NavigationDrawer" />
           </set>
         </option>
       </GradleProjectSettings>

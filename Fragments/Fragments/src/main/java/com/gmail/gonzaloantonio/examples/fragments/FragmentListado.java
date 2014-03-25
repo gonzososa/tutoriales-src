@@ -40,6 +40,7 @@ public class FragmentListado extends Fragment
     @Override
     public void onActivityCreated (Bundle state) {
         super.onActivityCreated (state);
+
         listado = (ListView) getView().findViewById (R.id.LstListado);
         listado.setAdapter (new AdaptadorCorreos (this));
         listado.setOnItemClickListener (new AdapterView.OnItemClickListener() {

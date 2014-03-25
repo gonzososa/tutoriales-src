@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/EjemploFichas" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\EjemploFichas" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\EjemploFichas\EjemploFichas" />
           </set>
         </option>
       </GradleProjectSettings>

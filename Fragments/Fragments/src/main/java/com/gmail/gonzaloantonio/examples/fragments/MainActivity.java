@@ -18,12 +18,12 @@ public class MainActivity extends FragmentActivity implements CorreosListener {
 
     public void onCorreoSeleccionado (Correo c) {
         boolean hayDetalle =
-                (getSupportFragmentManager().findFragmentById(R.id.FrgDetalle)) != null;
+                (getSupportFragmentManager().findFragmentById (R.id.FrgDetalle)) != null;
 
         if (hayDetalle) {
             ((FragmentDetalle)getSupportFragmentManager()
-                    .findFragmentById(R.id.FrgDetalle))
-                    .mostrarDetalle(c.getTexto());
+                    .findFragmentById (R.id.FrgDetalle))
+                    .mostrarDetalle (c.getTexto());
         }
         else {
             Intent i = new Intent (this, DetalleActivity.class);

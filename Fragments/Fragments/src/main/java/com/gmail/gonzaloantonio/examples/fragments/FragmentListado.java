@@ -66,16 +66,33 @@ public class FragmentListado extends Fragment
         }
 
         public View getView (int position, View convertView, ViewGroup parent) {
-            LayoutInflater inflater = context.getLayoutInflater ();
-            View item = inflater.inflate (R.layout.listitem_correo, null);
+            ViewHolder viewHolder;
 
-            TextView LblDe = (TextView) item.findViewById (R.id.LblDe);
-            LblDe.setText (datos[position].getDe ());
+            if (convertView == null) {
+                LayoutInflater inflater = context.getLayoutInflater();
+                convertView = inflater.inflate (R.layout.listitem_correo, null);
 
-            TextView LblAsunto = (TextView) item.findViewById (R.id.LblAsunto);
-            LblAsunto.setText (datos[position].getAsunto ());
+                viewHolder = new ViewHolder ();
+                viewHolder.LblDe = (TextView) convertView.findViewById(R.id.LblDe);
+                viewHolder.LblAsunto = (TextView) convertView.findViewById(R.id.LblAsunto);
 
-            return item;
+                convertView.setTag (viewHolder);
+            }
+            else {
+                viewHolder = (ViewHolder) convertView.getTag ();
+            }
+
+            if (datos[position] != null) {
+                viewHolder.LblDe.setText (datos[position].getDe ());
+                viewHolder.LblAsunto.setText (datos[position].getAsunto ());
+            }
+
+            return convertView;
         }
+    }
+
+    static class ViewHolder {
+        public TextView LblDe;
+        public TextView LblAsunto;
     }
 }

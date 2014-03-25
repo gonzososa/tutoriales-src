@@ -2,12 +2,29 @@ package com.gmail.gonzaloantonio.examples.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.FragmentActivity;
 
 public class MainActivity extends FragmentActivity implements CorreosListener {
 
+    private static final boolean DEVELOPER_MODE = true;
+
     @Override
     public void onCreate (Bundle savedInstanceState) {
+        if (DEVELOPER_MODE) {
+            StrictMode.setThreadPolicy (new StrictMode.ThreadPolicy.Builder()
+                    .detectDiskReads()
+                    .detectDiskWrites()
+                    .detectNetwork()
+                    .penaltyLog()
+                    .build());
+
+            StrictMode.setVmPolicy (new StrictMode.VmPolicy.Builder()
+                .penaltyLog()
+                .penaltyDeath()
+                .build());
+        }
+
         super.onCreate (savedInstanceState);
         setContentView (R.layout.activity_main);
 

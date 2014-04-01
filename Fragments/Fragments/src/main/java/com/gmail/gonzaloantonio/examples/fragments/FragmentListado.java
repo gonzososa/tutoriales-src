@@ -91,7 +91,7 @@ public class FragmentListado extends Fragment
         }
     }
 
-    static class ViewHolder {
+    class ViewHolder {
         public TextView LblDe;
         public TextView LblAsunto;
     }

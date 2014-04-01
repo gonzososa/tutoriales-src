@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ActionBar_I" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\ActionBar_I" />
+            <option value="C:\Users\Gonzalo\Documents\GitHub\tutoriales-src\ActionBar_I\ActionBar_I" />
           </set>
         </option>
       </GradleProjectSettings>
